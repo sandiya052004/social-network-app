@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECTU</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #af7ac5; /* Light purple */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .post {
+            background-color: #af7ac5; /* Light purple */
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .post h2 {
+            margin-top: 0;
+            color: #000; /* Black */
+        }
+
+        .post p {
+            margin-bottom: 0;
+            color: #000; /* Black */
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .profile h3 {
+            margin: 0;
+            color: #fff; /* White */
+        }
+
+        footer {
+            background-color: #af7ac5; /* Light purple */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CONNECTU</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{%url 'profile'%}">Profile</a></li>
+                <li><a href="{%url 'friends'%}">friends</a></li>
+                <li><a href="{%url 'message'%}">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Post Section -->
+        <section>
+            <h2>Create Post</h2>
+            <div class="post">
+                <form action="{%url 'home'%}" method="post">
+                    <textarea name="post_content" rows="4" cols="50" placeholder="What's on your mind?"></textarea><br>
+                    <input type="submit" value="Post">
+                </form>
+            </div>
+        </section>
+
+        <!-- Posts Section -->
+        <section>
+            <h2>Latest Posts</h2>
+            <!-- Example post -->
+            <div class="post">
+                <div class="profile">
+                    <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                    <h3>john@05</h3>
+                </div>
+                <p>Hi, iam john .this is my connectu first post and happy to welcome you all.this social app help me to connect with friends and it is very helpful.</p>
+            </div>
+            <!-- Add more posts here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CONNECTU</p>
+    </footer>
+
+</body>
+</html>

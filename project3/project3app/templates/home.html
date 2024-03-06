@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECTU - Home</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6e6fa; /* Light purple */
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #9370db; /* Medium purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        section {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #9370db; /* Medium purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Add more CSS styles as needed */
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CONNECTU</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{%url 'profile' %}">Profile</a></li>
+                <li><a href="{%url 'home'%}">Friends</a></li>
+                <li><a href="{%url 'home'%}">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section>
+            <h2>Welcome to CONNECTU</h2>
+            <p>This is a simple social media network where you can connect with friends, share updates, and send messages.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Post updates and share your thoughts with friends.</li>
+                <li>Connect with friends and view their profiles.</li>
+                <li>Send and receive messages in real-time.</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </section>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Us</h2>
+            <p>CONNECTU is a platform designed to help you stay connected with friends and family.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CONNECTU</p>
+    </footer>
+
+</body>
+</html>

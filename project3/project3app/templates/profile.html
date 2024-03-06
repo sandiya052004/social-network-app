@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECTU- Profile</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6e6fa; /* Light purple */
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #9370db; /* Medium purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        section {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #9370db; /* Medium purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Add more CSS styles as needed */
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-details {
+            flex: 1;
+        }
+
+        .profile-details h2 {
+            margin-top: 0;
+        }
+
+        .profile-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CONNECTU</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{%url 'profile'%}">Profile</a></li>
+                <li><a href="{%url 'home'%}">Friends</a></li>
+                <li><a href="{%url 'home'%}">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Profile Section -->
+        <section>
+            <div class="profile-info">
+                <img src="https://via.placeholder.com/100" alt="Profile Picture">
+                <div class="profile-details">
+                    <h2>John</h2>
+                    <p>Email: john@05.com</p>
+                    <p>Location: India</p>
+                    <!-- Add more profile details as needed -->
+                </div>
+            </div>
+            <h2>Posts by John@05</h2>
+            <div class="post">
+                <p>John posted:</p>
+                <p>Hi, iam john .this is my connectu first post and happy to welcome you all.this social app help me to connect with friends and it is very helpful.</p>
+            </div>
+            <!-- Add more posts by the user here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CONNECTU</p>
+    </footer>
+
+</body>
+</html>
